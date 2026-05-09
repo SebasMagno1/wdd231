@@ -1,0 +1,156 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* ======================
+   HEADER
+====================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #1f2937;
+  color: white;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+}
+
+#menuBtn {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  background: #374151;
+  border-radius: 5px;
+}
+
+/* ======================
+   MAIN
+====================== */
+main {
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+/* ======================
+   COURSES CARDS
+====================== */
+#courseContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.course {
+  padding: 10px;
+  border-radius: 8px;
+  background: #e5e7eb;
+  transition: 0.3s;
+}
+
+.course:hover {
+  transform: scale(1.02);
+}
+
+.completed {
+  background: #10b981;
+  color: white;
+}
+
+/* FILTER BUTTONS */
+.filters button {
+  margin-right: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+/* ======================
+   ONLINE COURSES
+====================== */
+#onlineCourses {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+#onlineCourses li {
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #f3f4f6;
+  border-left: 4px solid #3b82f6;
+  border-radius: 5px;
+}
+
+/* ======================
+   FOOTER
+====================== */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #111827;
+  color: white;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #60a5fa;
+}
+
+/* ======================
+   RESPONSIVE NAV
+====================== */
+@media (max-width: 768px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    background: #1f2937;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  #menuBtn {
+    display: block;
+  }
+}
