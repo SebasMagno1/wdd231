@@ -14,9 +14,7 @@ document.getElementById("lastModified").textContent =
   "Last Modified: " + document.lastModified;
 
 
-/* =========================
-   BYU COURSES DATA
-========================= */
+/* COURSES DATA */
 const courses = [
   { code: "WDD130", name: "Web Fundamentals", credits: 2, completed: true },
   { code: "WDD131", name: "Dynamic Web Fundamentals", credits: 2, completed: true },
@@ -42,7 +40,6 @@ function displayCourses(list) {
     container.appendChild(div);
   });
 
-  // total credits (reduce)
   const total = list.reduce((sum, course) => sum + course.credits, 0);
   document.getElementById("totalCredits").textContent = total;
 }
@@ -59,13 +56,17 @@ function filterCourses(type) {
   displayCourses(filtered);
 }
 
-// initial load
+// BUTTON EVENTS (NO onclick — FIX REQUIRED)
+document.querySelectorAll(".filters button").forEach(button => {
+  button.addEventListener("click", () => {
+    filterCourses(button.dataset.filter);
+  });
+});
+
+// INITIAL LOAD
 displayCourses(courses);
 
 
-/* =========================
-   ONLINE COURSES SECTION
-========================= */
 const onlineCourses = [
   { name: "Administrador de bases de datos", platform: "Fundación Carlos Slim" },
   { name: "Introducción a la programación", platform: "Fundación Carlos Slim" },
@@ -85,5 +86,4 @@ function displayOnlineCourses() {
   });
 }
 
-// run
 displayOnlineCourses();
