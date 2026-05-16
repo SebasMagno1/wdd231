@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Tech Solutions Inc",
+    "address": "123 Main St, Utah",
+    "phone": "801-555-1000",
+    "website": "https://techsolutions.com",
+    "image": "tech1.jpg",
+    "membership": 3,
+    "description": "IT consulting and software services."
+  },
+  {
+    "name": "Green Market",
+    "address": "45 Farm Rd, Utah",
+    "phone": "801-555-2000",
+    "website": "https://greenmarket.com",
+    "image": "market.jpg",
+    "membership": 2,
+    "description": "Local organic grocery store."
+  },
+  {
+    "name": "Sunrise Fitness",
+    "address": "88 Health Ave, Utah",
+    "phone": "801-555-3000",
+    "website": "https://sunrisefitness.com",
+    "image": "fitness.jpg",
+    "membership": 1,
+    "description": "Gym and personal training center."
+  }
+]
