@@ -1,0 +1,82 @@
+/* =========================
+   CHAMBER - MOBILE DESIGN
+========================= */
+
+header {
+  background: #111827;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+nav a {
+  color: white;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+nav a:hover {
+  color: #60a5fa;
+}
+
+/* Layout container */
+main {
+  padding: 1rem;
+}
+
+/* Member cards */
+#members {
+  display: block;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.card p {
+  margin: 0.25rem 0;
+  color: #374151;
+}
+
+.card img {
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+button {
+  background: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  margin: 0.5rem;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Footer */
+footer {
+  background: #111827;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}

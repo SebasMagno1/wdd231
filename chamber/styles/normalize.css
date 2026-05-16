@@ -1,0 +1,100 @@
+/* ================================
+   MODERN NORMALIZE CSS (WDD 231)
+   Professional baseline reset
+================================== */
+
+/* 1. Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Base HTML defaults */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* 4. Lists */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 5. Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 6. Images */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* 9. Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 10. Accessibility focus */
+:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
+/* 11. Smooth UI transitions baseline */
+* {
+  transition: all 0.15s ease-in-out;
+}
