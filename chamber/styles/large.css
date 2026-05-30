@@ -1,34 +1,12 @@
-@media (min-width: 32rem) {
+@media (min-width: 768px) {
 
-  /* Grid view */
-  #members.grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
 
-  /* List view */
-  #members.list {
-    display: block;
-  }
-
-  .card {
-    margin: 0;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-  }
-
-  nav {
-    gap: 2rem;
-  }
-
-  main {
-    max-width: 1100px;
-    margin: auto;
-  }
+    #spotlight-container {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
+    }
 }
