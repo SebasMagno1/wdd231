@@ -1,29 +1,28 @@
-[
-  {
-    "name": "Tech Solutions Inc",
-    "address": "123 Main St, Utah",
-    "phone": "801-555-1000",
-    "website": "https://techsolutions.com",
-    "image": "tech1.jpg",
-    "membership": 3,
-    "description": "IT consulting and software services."
-  },
-  {
-    "name": "Green Market",
-    "address": "45 Farm Rd, Utah",
-    "phone": "801-555-2000",
-    "website": "https://greenmarket.com",
-    "image": "market.jpg",
-    "membership": 2,
-    "description": "Local organic grocery store."
-  },
-  {
-    "name": "Sunrise Fitness",
-    "address": "88 Health Ave, Utah",
-    "phone": "801-555-3000",
-    "website": "https://sunrisefitness.com",
-    "image": "fitness.jpg",
-    "membership": 1,
-    "description": "Gym and personal training center."
-  }
-]
+{
+  "members":[
+    {
+      "name":"Mountain Tech",
+      "address":"123 Main St",
+      "phone":"801-555-1234",
+      "website":"https://mountaintech.com",
+      "membership":"Gold",
+      "image":"images/mountaintech.webp"
+    },
+    {
+      "name":"Utah Financial",
+      "address":"456 State St",
+      "phone":"801-555-5678",
+      "website":"https://utahfinancial.com",
+      "membership":"Silver",
+      "image":"images/utahfinancial.webp"
+    },
+    {
+      "name":"Peak Marketing",
+      "address":"789 Center St",
+      "phone":"801-555-9012",
+      "website":"https://peakmarketing.com",
+      "membership":"Gold",
+      "image":"images/peakmarketing.webp"
+    }
+  ]
+}
