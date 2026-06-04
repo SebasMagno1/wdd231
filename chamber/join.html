@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Chamber</title>
+
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>Chamber of Commerce</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="discover.html">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html">Join</a>
+</nav>
+
+<main class="join-container">
+
+    <section class="form-section">
+
+        <h2>Membership Application</h2>
+
+        <form method="get" action="thankyou.html">
+
+            <label>
+                First Name
+                <input
+                    type="text"
+                    name="firstname"
+                    required
+                    title="Enter your first name"
+                    autocomplete="given-name">
+            </label>
+
+            <label>
+                Last Name
+                <input
+                    type="text"
+                    name="lastname"
+                    required
+                    title="Enter your last name"
+                    autocomplete="family-name">
+            </label>
+
+            <label>
+                Organization Title
+                <input
+                    type="text"
+                    name="orgtitle"
+                    title="Organization Title"
+                    autocomplete="organization-title"
+                    pattern="[A-Za-z\s\-]{7,}">
+            </label>
+
+            <label>
+                Email
+                <input
+                    type="email"
+                    name="email"
+                    required
+                    title="Enter your email"
+                    autocomplete="email"
+                    placeholder="example@email.com">
+            </label>
+
+            <label>
+                Mobile Phone
+                <input
+                    type="tel"
+                    name="phone"
+                    required
+                    title="Enter your phone number"
+                    autocomplete="tel">
+            </label>
+
+            <label>
+                Business Name
+                <input
+                    type="text"
+                    name="business"
+                    required
+                    title="Business Name"
+                    autocomplete="organization">
+            </label>
+
+            <label>
+                Membership Level
+                <select name="membership">
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+
+            <label>
+                Business Description
+                <textarea
+                    name="description"
+                    title="Business Description"></textarea>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <input type="submit" value="Submit Application">
+
+        </form>
+
+    </section>
+
+    <aside class="membership-cards">
+
+        <div class="card">
+            <h3>NP Membership</h3>
+            <a href="#" onclick="document.getElementById('npModal').showModal()">
+                Learn More
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Bronze Membership</h3>
+            <a href="#" onclick="document.getElementById('bronzeModal').showModal()">
+                Learn More
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Silver Membership</h3>
+            <a href="#" onclick="document.getElementById('silverModal').showModal()">
+                Learn More
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Gold Membership</h3>
+            <a href="#" onclick="document.getElementById('goldModal').showModal()">
+                Learn More
+            </a>
+        </div>
+
+    </aside>
+
+</main>
+
+<!-- NP Modal -->
+<dialog id="npModal">
+    <h3>NP Membership</h3>
+    <p>No fee for nonprofit organizations.</p>
+    <p>Access to networking events.</p>
+    <button onclick="npModal.close()">Close</button>
+</dialog>
+
+<!-- Bronze Modal -->
+<dialog id="bronzeModal">
+    <h3>Bronze Membership</h3>
+    <p>Directory listing.</p>
+    <p>Training opportunities.</p>
+    <button onclick="bronzeModal.close()">Close</button>
+</dialog>
+
+<!-- Silver Modal -->
+<dialog id="silverModal">
+    <h3>Silver Membership</h3>
+    <p>All Bronze benefits.</p>
+    <p>Event discounts.</p>
+    <p>Advertising opportunities.</p>
+    <button onclick="silverModal.close()">Close</button>
+</dialog>
+
+<!-- Gold Modal -->
+<dialog id="goldModal">
+    <h3>Gold Membership</h3>
+    <p>All Silver benefits.</p>
+    <p>Homepage spotlight.</p>
+    <p>Premium advertising.</p>
+    <p>VIP events.</p>
+    <button onclick="goldModal.close()">Close</button>
+</dialog>
+
+<footer>
+    <p>&copy; 2026 Chamber of Commerce</p>
+</footer>
+
+</body>
+</html>
