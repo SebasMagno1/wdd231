@@ -3,28 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Chamber</title>
 
+    <title>Join | Orem Chamber of Commerce</title>
+
+    <meta name="description" content="Join the Orem Chamber of Commerce and gain access to networking opportunities, training, advertising, and exclusive member benefits.">
+
+    <meta name="author" content="Jose Sebastian Escobar Salinas">
+
+    <meta property="og:title" content="Join the Orem Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Orem Chamber of Commerce and access valuable business resources and networking opportunities.">
+    <meta property="og:image" content="https://sebasmagno1.github.io/wdd231/chamber/images/chamber-social.webp">
+    <meta property="og:url" content="https://sebasmagno1.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Chamber base styles -->
+    <link rel="stylesheet" href="styles/base.css">
+
+    <!-- Join page styles -->
     <link rel="stylesheet" href="styles/join.css">
+
     <script src="scripts/join.js" defer></script>
-</head>
-<body>
+</head><body>
 
 <header>
-    <h1>Chamber of Commerce</h1>
-</header>
+    <img src="images/logo.webp" alt="Logo" width="80">
 
-<nav>
-    <a href="index.html">Home</a>
-    <a href="discover.html">Discover</a>
-    <a href="directory.html">Directory</a>
-    <a href="join.html">Join</a>
+    <h1>Orem Chamber of Commerce</h1>
+
+    <button id="menu"></button>
+
+    <nav>
+
+    <ul class="navigation">
+
+    <li><a href="index.html">Home</a></li>
+    <li><a href="directory.html">Directory</a></li>
+    <li><a href="discover.html">Discover</a></li>
+    <li><a href="join.html" class="active">Join</a></li>
+
+</ul>
+
 </nav>
+
+</header>
 
 <main class="join-container">
 
     <section class="form-section">
-
+        <h1>Join the Orem Chamber of Commerce</h1>
         <h2>Membership Application</h2>
 
         <form method="get" action="thankyou.html">
@@ -119,28 +153,28 @@
 
         <div class="card">
             <h3>NP Membership</h3>
-            <a href="#" onclick="document.getElementById('npModal').showModal()">
+            <a href="#" class="open-modal" data-modal="npModal">
                 Learn More
             </a>
         </div>
 
         <div class="card">
             <h3>Bronze Membership</h3>
-            <a href="#" onclick="document.getElementById('bronzeModal').showModal()">
+            <a href="#" class="open-modal" data-modal="bronzeModal">
                 Learn More
             </a>
         </div>
 
         <div class="card">
             <h3>Silver Membership</h3>
-            <a href="#" onclick="document.getElementById('silverModal').showModal()">
+            <a href="#" class="open-modal" data-modal="silverModal">
                 Learn More
             </a>
         </div>
 
         <div class="card">
             <h3>Gold Membership</h3>
-            <a href="#" onclick="document.getElementById('goldModal').showModal()">
+            <a href="#" class="open-modal" data-modal="goldModal">
                 Learn More
             </a>
         </div>
@@ -154,7 +188,7 @@
     <h3>NP Membership</h3>
     <p>No fee for nonprofit organizations.</p>
     <p>Access to networking events.</p>
-    <button onclick="npModal.close()">Close</button>
+    <button class="close-modal">Close</button>
 </dialog>
 
 <!-- Bronze Modal -->
