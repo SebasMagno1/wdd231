@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Finance Dashboard</title>
+
+<meta name="description"
+content="Dynamic financial dashboard">
+
+<meta name="author"
+content="Jose Sebastian Escobar Salinas">
+
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/large.css">
+<script type="module" src="js/dashboard.js"
+defer></script>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Finance Dashboard</h1>
+<button id="menu">☰</button> 
+    <nav> <ul class="navigation"> 
+        <li><a href="index.html">Home</a></li> 
+        <li><a href="dashboard.html">Dashboard</a></li> 
+        <li><a href="resources.html">Resources</a></li> 
+        <li><a href="form.html">Budget Form</a></li> 
+    </ul> 
+</nav>
+
+</header>
+
+<main>
+
+<h2>Transactions</h2>
+
+<select id="filter">
+
+<option value="all">All</option>
+
+<option value="Food">Food</option>
+
+<option value="Transportation">Transportation</option>
+
+<option value="Savings">Savings</option>
+
+<option value="Entertainment">Entertainment</option>
+
+</select>
+
+<div id="cards"></div>
+
+<dialog id="transactionModal">
+
+<h2 id="modalTitle"></h2>
+
+<p id="modalDate"></p>
+
+<p id="modalAmount"></p>
+
+<p id="modalDescription"></p>
+
+<button id="closeModal">
+Close
+</button>
+
+</dialog>
+
+</main>
+
+<footer>
+
+<p>©2026 Finance Hub</p>
+
+</footer>
+
+</body>
+
+</html>
