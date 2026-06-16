@@ -1,0 +1,17 @@
+[ 
+    { "id":1, "date":"2026-06-01", "category":"Food", "amount":18.50, "description":"Lunch with friends" }, 
+    { "id":2, "date":"2026-06-02", "category":"Transportation", "amount":42.00, "description":"Gas refill" }, 
+    { "id":3, "date":"2026-06-03", "category":"Savings", "amount":100, "description":"Emergency fund" }, 
+    { "id":4, "date":"2026-06-04", "category":"Entertainment", "amount":25, "description":"Movie tickets" }, 
+    { "id":5, "date":"2026-06-05", "category":"Food", "amount":12, "description":"Coffee shop" }, 
+    { "id":6, "date":"2026-06-06", "category":"Transportation", "amount":8, "description":"Bus pass" }, 
+    { "id":7, "date":"2026-06-07", "category":"Savings", "amount":50, "description":"Savings deposit" }, 
+    { "id":8, "date":"2026-06-08", "category":"Entertainment", "amount":35, "description":"Streaming subscription" }, 
+    { "id":9, "date":"2026-06-09", "category":"Food", "amount":16, "description":"Pizza dinner" }, 
+    { "id":10, "date":"2026-06-10", "category":"Transportation", "amount":60, "description":"Car maintenance" }, 
+    { "id":11, "date":"2026-06-11", "category":"Savings", "amount":75, "description":"Investment account" }, 
+    { "id":12, "date":"2026-06-12", "category":"Entertainment", "amount":14, "description":"Video game purchase" }, 
+    { "id":13, "date":"2026-06-13", "category":"Food", "amount":22, "description":"Grocery shopping" }, 
+    { "id":14, "date":"2026-06-14", "category":"Transportation", "amount":15, "description":"Uber ride" }, 
+    { "id":15, "date":"2026-06-15", "category":"Savings", "amount":125, "description":"Monthly savings contribution" } 
+]
