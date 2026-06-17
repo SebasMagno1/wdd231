@@ -1,60 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Thank You</title>
 
-<meta name="description" content="Budget form submission confirmation">
-<meta name="author" content="Jose Sebastian Escobar Salinas">
-
-<link rel="stylesheet" href="css/styles.css">
-<link rel="stylesheet" href="css/large.css">
-
-<script defer>
-window.addEventListener("DOMContentLoaded", () => {
-    const params = new URLSearchParams(window.location.search);
-
-    document.getElementById("name").textContent =
-        params.get("name");
-
-    document.getElementById("income").textContent =
-        params.get("income");
-
-    document.getElementById("goal").textContent =
-        params.get("goal");
-
-    document.getElementById("category").textContent =
-        params.get("category");
-});
-</script>
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/large.css">
 
 </head>
 
 <body>
 
 <header>
-<h1>Thank You!</h1>
+
+<h1>Finance Hub</h1>
+
 </header>
 
 <main>
 
-<h2>Your Budget Information</h2>
+<h2>Thank You!</h2>
+
+<p>Your budget goal has been submitted.</p>
+
+<div class="results">
 
 <p><strong>Name:</strong> <span id="name"></span></p>
 
-<p><strong>Monthly Income:</strong> $<span id="income"></span></p>
+<p><strong>Income:</strong> <span id="income"></span></p>
 
-<p><strong>Savings Goal:</strong> $<span id="goal"></span></p>
+<p><strong>Goal:</strong> <span id="goal"></span></p>
 
-<p><strong>Favorite Category:</strong> <span id="category"></span></p>
+<p><strong>Category:</strong> <span id="category"></span></p>
 
-<p>
-Your financial goals have been successfully submitted.
-</p>
-
-<a href="index.html">Return Home</a>
+</div>
 
 </main>
 
@@ -64,5 +48,25 @@ Your financial goals have been successfully submitted.
 
 </footer>
 
+<script>
+
+const params =
+new URLSearchParams(window.location.search);
+
+document.querySelector("#name").textContent =
+params.get("name");
+
+document.querySelector("#income").textContent =
+params.get("income");
+
+document.querySelector("#goal").textContent =
+params.get("goal");
+
+document.querySelector("#category").textContent =
+params.get("category");
+
+</script>
+
 </body>
+
 </html>

@@ -9,15 +9,15 @@
 
 <title>Finance Dashboard</title>
 
-<meta name="description"
-content="Dynamic financial dashboard">
+<meta name="description" content="Dynamic Finance Dashboard">
 
-<meta name="author"
-content="Jose Sebastian Escobar Salinas">
+<meta name="author" content="Jose Sebastian Escobar Salinas">
 
 <link rel="stylesheet" href="styles/styles.css">
 <link rel="stylesheet" href="styles/large.css">
-<script src="js/dashboard.js"></script>
+
+<script type="module" src="scripts/main.js" defer></script>
+<script type="module" src="scripts/dashboard.js" defer></script>
 
 </head>
 
@@ -26,20 +26,60 @@ content="Jose Sebastian Escobar Salinas">
 <header>
 
 <h1>Finance Dashboard</h1>
-<button id="menu">☰</button> 
-    <nav> <ul class="navigation"> 
-        <li><a href="index.html">Home</a></li> 
-        <li><a href="dashboard.html">Dashboard</a></li> 
-        <li><a href="resources.html">Resources</a></li> 
-        <li><a href="form.html">Budget Form</a></li> 
-    </ul> 
+
+<button id="menu">☰</button>
+
+<nav>
+
+<ul class="navigation">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a class="active" href="dashboard.html">Dashboard</a></li>
+
+<li><a href="resources.html">Resources</a></li>
+
+<li><a href="form.html">Budget Form</a></li>
+
+</ul>
+
 </nav>
 
 </header>
 
 <main>
 
-<h2>Transactions</h2>
+<section class="statistics">
+
+<div class="stat">
+
+<h2>Total Transactions</h2>
+
+<p id="transactionCount">15</p>
+
+</div>
+
+<div class="stat">
+
+<h2>Total Amount</h2>
+
+<p id="total">$0</p>
+
+</div>
+
+<div class="stat">
+
+<h2>Favorite Category</h2>
+
+<p id="favorite">All</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Filter Transactions</h2>
 
 <select id="filter">
 
@@ -55,7 +95,11 @@ content="Jose Sebastian Escobar Salinas">
 
 </select>
 
-<div id="cards"></div>
+</section>
+
+<section id="cards">
+
+</section>
 
 <dialog id="transactionModal">
 
