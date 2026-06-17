@@ -7,13 +7,21 @@ const closeButton = document.querySelector("#closeModal");
 
 export function initializeModal() { 
     if (closeButton) { 
-        closeButton.addEventListener( "click", () => { modal.close(); } ); 
+        closeButton.addEventListener("click", () => { 
+            modal.close(); 
+        }); 
     } 
-} 
-
-export function openModal(transaction) { 
-    title.textContent = transaction.category; 
-    date.textContent = `Date: ${transaction.date}`; 
-    amount.textContent = `Amount: $${transaction.amount}`; 
-    description.textContent = transaction.description; modal.showModal(); 
-}
+    
+    modal.addEventListener("click", (event) => { 
+        if (event.target === modal) { 
+            modal.close(); } 
+        }); 
+    } 
+    
+    export function openModal(transaction) { 
+        title.textContent = transaction.category; 
+        date.textContent = `Date: ${transaction.date}`; 
+        amount.textContent = `Amount: $${transaction.amount}`; 
+        description.textContent = transaction.description; 
+        modal.showModal(); 
+    }
