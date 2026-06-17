@@ -1,120 +1,246 @@
-*{
-    margin:0; 
-    padding:0; 
-    box-sizing:border-box; 
-    } 
+/* ---------- GENERAL ---------- */ 
+*{ 
+    margin:0; padding:0; box-sizing:border-box; 
+} 
 
 body{ 
-    font-family:Arial,Helvetica,sans-serif; 
-    line-height:1.6; 
-    background:#f5f5f5; 
-    color:#222; 
+    font-family:Arial, Helvetica, sans-serif; background:#f4f7fa; 
+    color:#222; line-height:1.6; 
 } 
-    
+
+/* ---------- HEADER ---------- */ 
 header{ 
-    background:#0a4d8c; 
-    color:white; 
-    padding:1rem; 
+    background:#0B4F6C; color:white; padding:1rem; 
 } 
 
 header h1{ 
-    text-align:center; 
+    text-align:center; margin-bottom:.5rem; 
 } 
 
-#menu{ 
-    display:block; 
-    margin:.5rem auto; 
-    padding:.5rem; 
-    font-size:1.2rem; 
+/* ---------- NAVIGATION ---------- */ 
+#menu{ display:block; margin:auto; border:none; background:white; color:#0B4F6C; 
+    font-size:1.6rem; padding:.4rem .8rem; cursor:pointer; 
 } 
-
 .navigation{ 
-    list-style:none; 
     display:none; 
-    flex-direction:column; 
+    list-style:none; 
 } 
 
 .navigation.open{ 
-    display:flex; 
+    display:block; 
 } 
 
 .navigation li{ 
-    padding:.5rem; 
-    text-align:center; 
+    margin:.5rem 0; 
 } 
 
 .navigation a{ 
+    display:block; padding:.8rem; 
     text-decoration:none; 
     color:white; 
-    font-weight:bold; 
+    text-align:center; 
 } 
 
+.navigation a:hover{ 
+    background:#145c80; 
+} 
+
+.active{ 
+    background:white; 
+    color:#0B4F6C !important; 
+    font-weight:bold; 
+}
+
+/* ---------- MAIN ---------- */ 
 main{ 
-    max-width:1000px; 
+    max-width:1200px; 
     margin:auto; 
     padding:1rem; 
 } 
+    
+/* ---------- HERO ---------- */ 
+.hero{ 
+    position:relative; 
+}
 
 .hero img{ 
     width:100%; 
-    height:auto; 
-    border-radius:8px; 
+    display:block; 
+    border-radius:10px; 
 } 
 
-section{ 
+.hero-text{ 
+    padding:1rem; 
+    background:white; 
+    margin-top:-5px; 
+} 
+
+.hero-text h2{ 
+    margin-bottom:.5rem; 
+} 
+
+.button{ 
+    display:inline-block; 
+    margin-top:1rem; 
+    background:#0B4F6C; 
+    color:white; 
+    text-decoration:none; 
+    padding:.8rem 1.2rem; 
+    border-radius:6px; 
+} 
+
+.button:hover{ 
+    background:#145c80; 
+} 
+
+/* ---------- SUMMARY ---------- */ 
+.summary{ 
+    display:grid; 
+    grid-template-columns:1fr; 
+    gap:1rem; 
+    margin-top:2rem; 
+} 
+
+.box{ 
     background:white; 
     padding:1rem; 
-    margin:1rem 0; 
-    border-radius:8px; 
-    box-shadow:0 0 5px rgba(0,0,0,.1); 
+    border-radius:10px; 
+    box-shadow:0 0 8px rgba(0,0,0,.1); 
+    text-align:center; 
 } 
+
+/* ---------- TIPS ---------- */ 
+.tips{ 
+    margin-top:2rem; 
+} 
+
+.tips ul{ 
+    padding-left:1.2rem; 
+} 
+
+/* ---------- DASHBOARD ---------- */ 
+.statistics{ 
+    display:grid; 
+    grid-template-columns:1fr; 
+    gap:1rem; margin-bottom:2rem; 
+} 
+
+.stat{ 
+    background:white; 
+    text-align:center; 
+    padding:1rem; 
+    border-radius:10px; 
+    box-shadow:0 0 8px rgba(0,0,0,.1); 
+} 
+
+#filter{ 
+    margin:1rem 0; 
+    padding:.5rem; 
+} 
+
+/* ---------- CARDS ---------- */ 
 
 #cards{ 
     display:grid; 
     grid-template-columns:1fr; 
     gap:1rem; 
-    margin-top:1rem; 
 } 
 
 .card{ 
     background:white; 
+    border-radius:10px; 
     padding:1rem; 
-    border-radius:8px; 
-    box-shadow:0 0 6px rgba(0,0,0,.15); 
+    box-shadow:0 0 10px rgba(0,0,0,.1); 
 } 
 
-button,input[type=submit]{ 
-    padding:.6rem 1rem; 
+.card h3{ 
+    color:#0B4F6C; 
+} 
+
+.card button{ 
+    margin-top:1rem; 
+    background:#0B4F6C; 
+    color:white; border:none; 
+    padding:.5rem 1rem; 
     cursor:pointer; 
 } 
 
-form{ 
+.card button:hover{ 
+    background:#145c80; 
+} 
+
+/* ---------- RESOURCES ---------- */ 
+.resource-grid{ 
     display:grid; 
+    grid-template-columns:1fr; 
     gap:1rem; 
 } 
 
-label{ 
-    display:flex; 
-    flex-direction:column; 
-} 
-
-input,select{ 
-    padding:.5rem; 
-} 
-
-dialog{ 
+.resource-grid .card{ 
+    background:white; 
     padding:1rem; 
-    border:none; 
-    border-radius:8px; 
-    max-width:400px; 
+    border-radius:10px; 
 } 
 
+/* ---------- FORM ---------- */ 
+
+form{ background:white; 
+    padding:2rem; 
+    border-radius:10px; 
+    box-shadow:0 0 10px rgba(0,0,0,.1); 
+    max-width:500px; 
+    margin:auto; 
+} 
+
+label{ 
+    display:block; 
+    margin-bottom:1rem; 
+} 
+
+input, select{ 
+    width:100%; 
+    padding:.6rem; 
+    margin-top:.3rem; 
+} 
+
+input[type=submit]{ 
+    background:#0B4F6C; 
+    color:white; 
+    border:none; 
+    cursor:pointer; 
+} 
+
+input[type=submit]:hover{ 
+    background:#145c80; 
+} 
+
+/* ---------- THANKS ---------- */ 
+.results{ background:white; 
+    padding:2rem; 
+    border-radius:10px; 
+    max-width:500px; 
+    margin:auto; 
+    box-shadow:0 0 10px rgba(0,0,0,.1); 
+} 
+
+/* ---------- DIALOG ---------- */ 
+dialog{ 
+    border:none; 
+    border-radius:10px; 
+    padding:2rem; 
+} 
+
+dialog::backdrop{ 
+    background:rgba(0,0,0,.5); 
+} 
+
+/* ---------- FOOTER ---------- */ 
 footer{ 
-    background:#0a4d8c; 
+    margin-top:2rem; 
+    background:#0B4F6C; 
     color:white; 
     text-align:center; 
     padding:1rem; 
-    margin-top:2rem; 
 } 
 
 footer a{ 
